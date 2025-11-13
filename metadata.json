@@ -1,0 +1,5 @@
+{
+  "name": "AI Legal Case Assistant",
+  "description": "A case-based, transparent, RAG-style digital legal assistant for analyzing legal documents. This application provides insights into a specific legal case by answering questions based on case files and relevant legislation, with clear source citations. This tool is for informational purposes only and does not constitute legal advice.",
+  "requestFramePermissions": []
+}

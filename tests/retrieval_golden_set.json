@@ -1,0 +1,46 @@
+[
+  {
+    "id": "imamoglu_q1_ihaleye_fesat_gerekce",
+    "caseId": "imamoglu-sogutlucesme",
+    "question": "İddianamede ihaleye fesat iddiaları hangi gerekçelere dayanıyor?",
+    "relevant_doc_types": ["İddianame"],
+    "relevant_pages": [12, 34, 78],
+    "notes": "Checks if core indictment chunks for the main accusation are retrieved.",
+    "answer_should_contain": ["ihale şartnamesi", "rekabetin bozulması", "belirli firmalara avantaj"],
+    "answer_must_include_disclaimer": true,
+    "answer_must_have_sources_section": true
+  },
+  {
+    "id": "imamoglu_q2_kamu_zarari",
+    "caseId": "imamoglu-sogutlucesme",
+    "question": "Kamu zararı iddiaları hangi belgelerde geçiyor?",
+    "relevant_doc_types": ["Bilirkişi Raporu", "Duruşma Tutanağı", "İddianame"],
+    "relevant_pages": [8, 2, 78],
+    "notes": "Checks retrieval across different document types for a key concept.",
+    "answer_should_contain": ["kamu zararı", "bilirkişi raporu", "ihale sürecinin"],
+    "answer_must_include_disclaimer": true,
+    "answer_must_have_sources_section": true
+  },
+  {
+    "id": "imamoglu_q3_teknik_yeterlilik",
+    "caseId": "imamoglu-sogutlucesme",
+    "question": "Bilirkişi raporunda teknik yeterlilik ile ilgili ne tespit edildi?",
+    "relevant_doc_types": ["Bilirkişi Raporu"],
+    "relevant_pages": [8],
+    "notes": "Checks retrieval for a specific detail within a single document.",
+    "answer_should_contain": ["teknik yeterlilik", "eksiklik", "eşitlik ilkesine"],
+    "answer_must_include_disclaimer": true,
+    "answer_must_have_sources_section": true
+  },
+  {
+    "id": "gezi_q1_iddia",
+    "caseId": "gezi-park",
+    "question": "Gezi davası iddianamesindeki temel suçlama nedir?",
+    "relevant_doc_types": ["İddianame"],
+    "relevant_pages": [1],
+    "notes": "Checks retrieval for a different case file.",
+    "answer_should_contain": ["Gezi Parkı protestoları", "hükümeti ortadan kaldırmaya", "teşebbüs"],
+    "answer_must_include_disclaimer": true,
+    "answer_must_have_sources_section": true
+  }
+]
