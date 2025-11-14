@@ -2,10 +2,12 @@ import { GoogleGenAI } from "@google/genai";
 import { Role, MessageAuthor, type CaseDocument, type TckArticle, type Message, Source } from '../types';
 import { CASE_DOCUMENTS, TCK_ARTICLES } from '../constants';
 
-const API_KEY = process.env.API_KEY;
+const API_KEY =
+  import.meta.env.VITE_GEMINI_API_KEY ||
+  import.meta.env.VITE_API_KEY || '';
 
 if (!API_KEY) {
-  console.warn("API_KEY environment variable not set. Using a placeholder. AI features will not work.");
+  console.warn("VITE_GEMINI_API_KEY environment variable not set. AI features will not work.");
 }
 
 const ai = new GoogleGenAI({ apiKey: API_KEY || "NO_API_KEY_FOUND" });
