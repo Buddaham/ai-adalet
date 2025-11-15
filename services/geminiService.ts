@@ -2,7 +2,7 @@ import { GoogleGenAI } from "@google/genai";
 import { Role, MessageAuthor, type CaseDocument, type TckArticle, type Message, Source } from '../types';
 import { CASE_DOCUMENTS, TCK_ARTICLES } from '../constants';
 
-const API_KEY =
+const API_KEY = AIzaSyBKoSrdE_E56syDOOLeokB8ivaOtlgR-Hc
   import.meta.env.VITE_GEMINI_API_KEY ||
   import.meta.env.VITE_API_KEY || '';
 
@@ -10,7 +10,7 @@ if (!API_KEY) {
   console.warn("VITE_GEMINI_API_KEY environment variable not set. AI features will not work.");
 }
 
-const ai = new GoogleGenAI({ apiKey: API_KEY || "NO_API_KEY_FOUND" });
+const ai = new GoogleGenAI({ apiKey: AIzaSyBKoSrdE_E56syDOOLeokB8ivaOtlgR-Hc || "NO_API_KEY_FOUND" });
 
 function getRoleBasedSystemInstruction(role: Role): string {
   const base = `
